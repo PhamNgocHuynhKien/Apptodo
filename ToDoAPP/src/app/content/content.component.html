@@ -1,0 +1,9 @@
+
+<h1>LIST TODO</h1>
+<app-add-todo (addEvent)="addTodo($event)"></app-add-todo>
+<ul>
+    <li *ngFor = "let todo of listTodo, index as i">
+        <span>{{i}}</span><span>{{todo.title}}</span><span>{{todo.time.getDate()}}</span>
+        <button (click)="del(i)">Del</button>
+    </li>
+</ul>

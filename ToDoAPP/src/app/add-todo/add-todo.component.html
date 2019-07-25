@@ -1,0 +1,8 @@
+<p>add-todo works!</p>
+<div>
+        <input [(ngModel)]="nTitle" placeholder="Enter todo">
+        <input [(ngModel)]="nTime" placeholder="Enter todo" type="date">
+        <button (click)="addTodo($event)">Add</button>
+        <p>{{nTime}}</p>
+        <p>{{nTitle}}</p>
+    </div>
