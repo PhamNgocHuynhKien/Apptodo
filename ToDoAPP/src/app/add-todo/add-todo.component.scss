@@ -1,0 +1,30 @@
+div {
+    margin: 70px auto;
+    margin-top: 100px;
+}
+form {
+    font-size: 24px;
+    margin-top: 100px;
+}
+.example-full-width{
+    width: 100%;
+}
+// ::ng-deep .mat-form-field-placeholder{
+
+//     color:red !important;
+//   }
+  
+//   ::ng-deep .mat-focused .mat-form-field-placeholder{
+  
+//     color:red !important;
+//   }
+::ng-deep .mat-form-field-underline .mat-form-field-ripple{
+
+background-color: tomato !important;
+}
+::ng-deep .mat-form-field-label{
+    color:tomato !important;
+}
+::ng-deep .mat-form-field-empty.mat-form-field-label {
+    color:gray !important;
+}

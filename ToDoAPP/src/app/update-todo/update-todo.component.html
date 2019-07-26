@@ -1,0 +1,10 @@
+<div class="form-group" *ngIf="show">
+        <label for="formGroupExampleInput">Input title</label>
+        <input class="form-control" id="formGroupExampleInput" [(ngModel)]="nTitle" placeholder="Enter todo">
+        <label for="formGroupExampleInput">Input time</label>
+        <input class="form-control" id="formGroupExampleInput2" [(ngModel)]="nTime" placeholder="Enter todo" type="date">
+        
+        <button (click)="updateTodo($event)" type="button"class=" btn btn-warning">update</button>
+       
+    </div>
+    

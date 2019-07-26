@@ -1,1 +1,28 @@
-span {margin-right: 20px}
+span {margin-right: 30px}
+h1 {
+    text-align: center;
+    color: tomato;
+}
+#list {
+    width: 60%;
+    margin: 0 auto;
+}
+.list-todo {
+    list-style: none;
+    line-height: auto;
+    margin-top: 50px;
+    .list-item {
+        margin: 10px 0;
+     
+    }
+}
+.time-style {
+    font-size: 20px;
+    font-style: italic;
+}
+.button-area button{
+    margin-top: 25%;
+}
+.about-me {
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}

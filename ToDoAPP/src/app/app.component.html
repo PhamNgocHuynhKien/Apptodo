@@ -1,4 +1,11 @@
 <!--The content below is only a placeholder and can be replaced.-->
-
-<app-content></app-content>
-<router-outlet></router-outlet>
+<mat-sidenav-container>
+        <mat-sidenav #drawer mode="side" class="about-me">
+            About me
+        </mat-sidenav>
+        <mat-sidenav-content>
+                <h2 (click)="drawer.toggle()">About me</h2>
+                <app-content></app-content>
+                <router-outlet></router-outlet>
+        </mat-sidenav-content>
+    </mat-sidenav-container>

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { listTodo } from 'src/assets/listTodo';
 import { Todo } from 'src/assets/Todo';
-import { from } from 'rxjs';
+
 
 @Component({
   selector: 'app-content',
@@ -10,7 +10,8 @@ import { from } from 'rxjs';
 })
 export class ContentComponent implements OnInit {
 listTodo = listTodo;
-
+showupdate = false;
+index: number;
   constructor() { }
 
   ngOnInit() {
@@ -22,5 +23,13 @@ listTodo = listTodo;
   }
   del(index: number) {
     this.listTodo.splice(index,1);
+  }
+  updateTodo(todo: Todo) {
+    this.listTodo[this.index] = todo;
+    this.showupdate = false;
+  }
+  update(index: number){
+    this.index = index;
+    this.showupdate = true;
   }
 }

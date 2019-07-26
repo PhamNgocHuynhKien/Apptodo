@@ -1,8 +1,21 @@
-<p>add-todo works!</p>
-<div>
-        <input [(ngModel)]="nTitle" placeholder="Enter todo">
-        <input [(ngModel)]="nTime" placeholder="Enter todo" type="date">
-        <button (click)="addTodo($event)">Add</button>
-        <p>{{nTime}}</p>
-        <p>{{nTitle}}</p>
-    </div>
+
+<!-- <div class="form-group">
+    <label for="formGroupExampleInput">Input title</label>
+    <input class="form-control" id="formGroupExampleInput" [(ngModel)]="nTitle" placeholder="Enter todo">
+    <label for="formGroupExampleInput">Input time</label>
+    <input class="form-control" id="formGroupExampleInput2" [(ngModel)]="nTime" placeholder="Enter todo" type="date">
+    
+    <button (click)="addTodo($event)" type="button"class=" btn btn-primary">Add</button>
+   
+</div> -->
+<form class="example-form">
+    <mat-form-field class="example-full-width">
+        <input matInput name="nTitle" placeholder="Input title" [(ngModel)]="nTitle" >
+    </mat-form-field>
+    
+    <mat-form-field class="example-full-width">
+        <input matInput placeholder="Input time" [(ngModel)]="nTime" name="nTime" type="date">
+    </mat-form-field>
+    <br>
+    <button (click)="addTodo($event)" type="button"class=" btn btn-primary">Add</button>
+</form>
